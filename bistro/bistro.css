@@ -1,0 +1,539 @@
+/********GENERAL SETTINGS******/
+
+body {
+    background-color: #FFF;
+    font-family: 'tekst';
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+* img {
+    width: 100%;
+    align-items: center;
+}
+
+
+/**************FONTS***********/
+
+@font-face {
+    font-family: 'overskrift';
+    src: url('fonts/Raleway/Raleway-Light.ttf');
+}
+
+
+@font-face {
+    font-family: 'links';
+    src: url('fonts/Raleway/Raleway-Medium.ttf');
+}
+
+
+@font-face {
+    font-family: 'tekst';
+    src: url('fonts/Poppins/Poppins-Regular.ttf');
+}
+
+h2 {
+    font-family: 'overskrift';
+    padding: 20px;
+    font-size: 22pt;
+}
+
+/**************BURGER NAV**************/
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#menuToggle {
+    margin: 2px;
+    display: block;
+    position: relative;
+    top: 40px;
+    left: 5px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+
+}
+
+#burger-menu a {
+    display: block;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 5;
+    /* and place it over the hamburger */
+}
+
+/*
+ * Just a quick hamburger
+ */
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #25463A;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: ##cdcdcd;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+
+#burger-menu {
+    position: absolute;
+    width: 200px;
+    margin: -100px 0 5 -50px;
+    padding: 20px;
+    padding-top: 15px;
+
+    background: #25463A;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#burger-menu li {
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+#burger-menu li:hover {
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    color: #43816B;
+
+
+
+}
+
+/*
+ * And let's slide it in from the left
+ */
+
+#menuToggle input:checked ~ ul {
+    border-radius: 5px;
+    transform: none;
+}
+
+
+
+/**************NAV**************/
+
+nav {
+    z-index: 2;
+    font-family: 'links';
+    padding: 50px;
+    text-align: center;
+
+}
+
+nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    background: #25463A;
+    border-radius: 5px;
+}
+
+nav > ul > li {
+    float: left;
+    width: 150px;
+    height: 65px;
+    line-height: 65px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+nav > ul > li:hover {
+    background: #43816B;
+    border-radius: 5px;
+}
+
+ul.drop-menu {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    padding: 0;
+}
+
+ul.drop-menu li {
+    background: #2C5548;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+ul.drop-menu li:hover {
+    z-index: 1;
+    background: #508D77;
+}
+
+ul.drop-menu li:last-child {
+    border-radius: 0px 0px 5px 5px;
+}
+
+ul.drop-menu li {
+    display: none;
+}
+
+li:hover > ul.drop-menu li {
+    display: block;
+    z-index: 1;
+}
+
+a {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 2em;
+    margin: -2em;
+}
+
+/****************SPLASH ***************/
+
+#hjem .splash {
+    width: 100vw;
+    height: 186.6vw;
+    background-image: url('img/bistro_mobile_portrait.jpg');
+    background-size: cover;
+}
+
+.icon {
+    padding: 1px;
+    text-align: center;
+    color: #FFF;
+
+}
+
+.icon_box {
+    margin-top: 100px;
+    z-index: 1;
+    background-color: #508D77;
+    opacity: 0.8;
+    filter: alpha(opacity=10);
+    /* For IE8 and earlier */
+}
+
+
+
+/*************MEDIA QUERIES**************/
+
+@media screen and (min-width: 376px) and (max-width: 627px) and (orientation:landscape) {
+
+    .icon {}
+
+    #hjem .splash {
+        height: 81.49vw;
+        background-image: url('img/bistro_mobile_landscape.jpg');
+    }
+
+}
+
+@media screen and (max-width: 848px) and (orientation:landscape) {
+    .icon {}
+
+    #hjem .splash {
+        height: 133.5vw;
+        background-image: url('img/bistro_tablet_portrait.jpg');
+    }
+    nav {
+        display: none;
+    }
+    #kontakt {
+        margin: 50px;
+    }
+
+}
+
+@media screen and (min-width: 848px) {
+    #menuToggle {
+        display: none;
+    }
+    #kontakt {
+        margin: 100px;
+    }
+
+}
+
+
+@media screen and (min-width: 628px) and (max-width: 1024px)and (orientation:landscape) {
+
+    .icon {}
+
+    #hjem .splash {
+        height: 66.7vw;
+        background-image: url('img/bistro_tablet_landscape.jpg');
+    }
+
+}
+
+@media screen and (min-width: 1025px) and (orientation:landscape) {
+
+    .icon {}
+
+    #hjem .splash {
+        height: 66.65vw;
+        background-image: url('img/bistro.jpg');
+    }
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1025px),
+screen and (min-resolution: 192dpi) and (min-width: 1025px) {
+
+    .icon {}
+
+    #hjem .splash {
+        height: 56.25vw;
+        background-image: url('img/bistro_retina.jpg');
+    }
+
+}
+
+/*************MENUKORT**************/
+
+#menu h2 {
+    padding: 0px;
+}
+
+#menu i {
+    color: black;
+}
+
+#menu {
+    background-color: #fffacd;
+    margin: 40px auto 0 auto;
+    padding: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #217166;
+    border-radius: 20px;
+}
+
+
+.column-left {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 20px;
+}
+
+.column-mid {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 20px;
+}
+
+.column-right {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 20px;
+}
+
+
+/*************OM***********/
+
+#om h2 {
+    padding-bottom: 20px;
+    margin: 10px;
+}
+
+#om {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.omtekst {
+    flex-grow: 1;
+    flex-basis: 300px;
+    text-align: center;
+    padding: 10px;
+    padding-left: 15px;
+    margin: 10px;
+}
+
+
+.ombillede {
+    flex-grow: 1;
+    flex-basis: 500px;
+    align-self: center;
+    padding: 0px;
+    margin: 50px;
+    border-radius: 15px;
+}
+
+.omvideo {
+    align-content: center;
+    margin: 50px;
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+/*********** KONTAKT ********/
+
+#kontakt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 100px;
+    background: #25463A;
+    color: white;
+}
+
+#kontakt .top {
+    padding-top: 40px;
+    flex-grow: 1;
+    flex-basis: 300px;
+    text-align: center;
+
+
+}
+
+#kontakt .bottom {
+    flex-grow: 1;
+    flex-basis: 300px;
+    text-align: center;
+
+}
+
+.map {
+    border-radius: 50px;
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*********** FOOTER ********/
+
+footer {
+    padding: 35px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #25463A;
+    color: white;
+    font-family: overskrift;
+}
+
+/******** SOCIAL MEDIA *********/
+
+.fa {
+
+    padding: 20px;
+    font-size: 30px;
+    width: 55px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: hotpink;
+    color: white;
+}

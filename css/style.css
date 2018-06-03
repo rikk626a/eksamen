@@ -247,7 +247,7 @@ Intro
      background: transparent;
      padding: .6em 1em;
      border-top: none;
-     color: white;
+     color: #f0eee1;
      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -628,4 +628,29 @@ Placeholder Sections
           font-size: 20px;
           font-size: 1.25rem;
      }
+}
+
+/* --------------------------------
+
+FOOTER Section
+
+-------------------------------- */
+
+.parent_foot {
+     display: flex;
+     justify-content: center;
+     background-color: rgba(3, 13, 24, 0.96);
+     margin: 0;
+     width: 100%;
+     padding: 0.5vw;
+}
+
+.content_foot {
+     margin: 0;
+     letter-spacing: 5vw;
+     color: rgba(255, 255, 255, 0.10);
+}
+
+.iframe {
+     margin: auto;
 }
