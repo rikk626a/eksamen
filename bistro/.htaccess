@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Password Protected Area"
-AuthUserFile /customers/5/2/e/kroghport.dk/httpd.www/kea/03-video/03.03.02_re-design/bistro/.htpasswd
-Require valid-user
