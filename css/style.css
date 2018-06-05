@@ -1,25 +1,4 @@
-/* --------------------------------
-
-Primary style
-
--------------------------------- */
-
-*,
-*:after,
-*:before {
-     -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-     box-sizing: border-box;
-}
-
-/* --------------------------------
-
-Modules - reusable parts of our design
-
--------------------------------- */
-
 .cd-container {
-     /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
      width: 90%;
      max-width: 768px;
      margin: 0 auto;
@@ -228,7 +207,7 @@ Intro
      position: relative;
      height: 400px;
      width: 100%;
-     background: url(../img/intro-background_05.jpg) no-repeat center center;
+     background: url(../icon-img/head_1.png) no-repeat center center;
      background-size: cover;
      z-index: 2;
 }
@@ -242,13 +221,15 @@ Intro
 }
 
 #cd-intro h1 {
+     text-transform: uppercase;
      height: auto;
      line-height: normal;
      background: transparent;
      padding: .6em 1em;
      border-top: none;
-     color: #f0eee1;
-     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+     color: #f5484a;
+     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+     font-family: sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -259,8 +240,7 @@ Intro
           padding-top: 160px;
      }
      #cd-intro h1 {
-          font-size: 32px;
-          font-size: 2rem;
+          font-size: 5em;
      }
 }
 
@@ -324,7 +304,6 @@ Secondary Fixed Navigation
 }
 
 .cd-secondary-nav ul {
-     /* mobile first - secondary navigation hidden by default, triggered by tap/click on .cd-secondary-nav-trigger*/
      position: fixed;
      width: 90%;
      max-width: 400px;
@@ -382,6 +361,7 @@ Secondary Fixed Navigation
           -webkit-transition: height 0.3s;
           -moz-transition: height 0.3s;
           transition: height 0.3s;
+
      }
      .cd-secondary-nav nav,
      .cd-secondary-nav ul,
@@ -463,8 +443,6 @@ Secondary Fixed Navigation
           background-position: -160px 0;
      }
      .cd-secondary-nav.is-fixed {
-          /* on Firefox CSS transition/animation fails when parent element changes position attribute*/
-          /* so we defined to diffent classes: .is-fixed to change the position value and .is-animated to change childrens' attributes (padding and opacity)*/
           position: fixed;
           left: 0;
           top: 0;
@@ -472,8 +450,6 @@ Secondary Fixed Navigation
           width: 100%;
      }
      .cd-secondary-nav.animate-children {
-          /* on Firefox CSS transition/animation fails when parent element changes position attribute*/
-          /* so we defined to diffent classes: .is-fixed to change the position value and .is-animated to change childrens' attributes (padding and opacity)*/
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
      }
      .cd-secondary-nav.animate-children li a {
@@ -492,7 +468,6 @@ Secondary Fixed Navigation
      height: 44px;
      background: rgba(3, 13, 24, 0.96);
      border-radius: 0.25em;
-     /* image replacement */
      overflow: hidden;
      text-indent: 100%;
      white-space: nowrap;
@@ -500,7 +475,6 @@ Secondary Fixed Navigation
 }
 
 .cd-secondary-nav-trigger span {
-     /* the span element is used to create the menu icon */
      position: absolute;
      display: block;
      width: 4px;
@@ -585,8 +559,15 @@ Secondary Fixed Navigation
      transform: rotate(225deg);
 }
 
-@media only screen and (min-width: 1170px) {
+
+@media only screen and (max-width: 767px) {
      .cd-secondary-nav-trigger {
+          display: none;
+     }
+}
+
+@media only screen and (max-width: 1170px) {
+     .cd-secondary-nav .menu {
           display: none;
      }
 }
@@ -642,7 +623,7 @@ FOOTER Section
      background-color: rgba(3, 13, 24, 0.96);
      margin: 0;
      width: 100%;
-     padding: 0.5vw;
+
 }
 
 .content_foot {
