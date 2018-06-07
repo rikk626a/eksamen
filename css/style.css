@@ -240,7 +240,7 @@ Intro
           padding-top: 160px;
      }
      #cd-intro h1 {
-          font-size: 5em;
+          font-size: 4em;
      }
 }
 
@@ -418,7 +418,7 @@ Secondary Fixed Navigation
           -o-transform: translateX(-50%);
           transform: translateX(-50%);
           background-repeat: no-repeat;
-          background-image: url(../img/cd-nav-icons.svg);
+          background-image: url(../icon-img/1.svg);
           -webkit-transition: opacity 0.2s;
           -moz-transition: opacity 0.2s;
           transition: opacity 0.2s;
@@ -431,16 +431,13 @@ Secondary Fixed Navigation
           background-position: 0 0;
      }
      .cd-secondary-nav li:nth-child(2) a span {
-          background-position: -40px 0;
+          background-image: url(../icon-img/2.svg);
      }
      .cd-secondary-nav li:nth-child(3) a span {
-          background-position: -80px 0;
+          background-image: url(../icon-img/3.svg);
      }
      .cd-secondary-nav li:nth-child(4) a span {
-          background-position: -120px 0;
-     }
-     .cd-secondary-nav li:nth-child(5) a span {
-          background-position: -160px 0;
+          background-image: url(../icon-img/4.svg);
      }
      .cd-secondary-nav.is-fixed {
           position: fixed;
