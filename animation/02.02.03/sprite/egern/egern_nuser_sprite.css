@@ -1,0 +1,27 @@
+#egern_container {}
+
+#egern_sprite {
+     background-image: url(egern_nuser_sprite-01.svg);
+     background-size: 800% 100%;
+     width: 41vw;
+     height: 46vw;
+}
+
+/************* Får figuren til at gå **/
+
+.egern_walkcycle {
+     animation-name: egern_walkcycle;
+     animation-duration: 1s;
+     animation-timing-function: steps(8);
+     animation-iteration-count: infinite;
+     animation-direction: reverse;
+}
+
+@keyframes egern_walkcycle {
+     0% {
+          background-position: 0% 0%;
+     }
+     100% {
+          background-position: 800% 0%;
+     }
+}

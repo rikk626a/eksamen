@@ -1,0 +1,27 @@
+#raev_container_ramt {}
+
+#raev_sprite_ramt {
+     background-image: url(raev_ramt_sprite_01.svg);
+     background-size: 800% 100%;
+     width: 41vw;
+     height: 46vw;
+}
+
+/************* Får figuren til at gå **/
+
+.raev_ramt {
+     animation-name: raev_ramt;
+     animation-duration: 1s;
+     animation-timing-function: steps(8);
+     animation-iteration-count: infinite;
+     animation-direction: reverse;
+}
+
+@keyframes raev_ramt {
+     0% {
+          background-position: 0% 0%;
+     }
+     100% {
+          background-position: 800% 0%;
+     }
+}

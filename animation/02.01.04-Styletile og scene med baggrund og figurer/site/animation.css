@@ -1,0 +1,170 @@
+.kredit {
+     background-image: url(grafik/scene/Krediteringsbillede.svg);
+     background-size: cover;
+     overflow: hidden;
+     width: 80vw;
+     height: 45vw;
+     margin: auto;
+     display: none;
+}
+
+.scene {
+     background-image: url(grafik/scene/Artboard%201-100.jpg);
+     background-size: cover;
+     width: 80vw;
+     height: 45vw;
+     margin: auto;
+     position: static;
+     background-repeat: no-repeat;
+     overflow: hidden;
+
+}
+
+.rev {
+     background-image: url("grafik/rev/raev.svg");
+     background-repeat: no-repeat;
+     background-size: 100%;
+     width: 20vw;
+     height: 27vw;
+     position: relative;
+     bottom: -14vw;
+     animation-name: rev;
+     animation-duration: 2s;
+     animation-fill-mode: forwards;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+
+}
+
+.egern {
+     background-image: url("grafik/egern/ny-eg/ny-egern.svg");
+     background-repeat: no-repeat;
+     background-size: 100%;
+     width: 20vw;
+     height: 27vw;
+     position: relative;
+     bottom: 5vw;
+     left: 49vw;
+     animation-name: egern;
+     animation-duration: 2s;
+     animation-fill-mode: forwards;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+}
+
+.busk {
+     background-image: url("grafik/scene/busk1.svg");
+     background-size: cover;
+     width: 35vw;
+     height: 10vw;
+     position: relative;
+     top: -19vw;
+     left: -5vw;
+
+}
+
+.sky {
+     background-image: url(grafik/scene/sky1.svg);
+     background-size: cover;
+     width: 22.5vw;
+     height: 7vw;
+     position: relative;
+     top: -64vw;
+     animation-name: sky;
+     animation-duration: 100s;
+     animation-fill-mode: forwards;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+}
+
+}
+
+.agern {
+     background-image: url("grafik/scene/Asset%20agern.svg");
+     background-size: cover;
+     width: 2.5vw;
+     height: 3.2vw;
+     position: relative;
+     top: -43vw;
+     right: -49vw;
+     z-index: 1;
+}
+
+.graes {
+     background-image: url("grafik/scene/graes3.svg");
+     background-size: cover;
+     width: 55vw;
+     height: 9vw;
+     position: relative;
+     top: -33vw;
+     right: -29vw;
+}
+
+.agern_bunk {
+     background-image: url(grafik/scene/agaern-bunke.svg);
+     background-size: cover;
+     position: relative;
+     display: block;
+}
+
+/* KEYFRAMES*/
+
+@keyframes rev {
+     from {
+          transform: translateX(0);
+     }
+     to {
+          transform: translateX(50px);
+     }
+}
+
+@keyframes egern {
+     from {
+          transform: translateY(0);
+     }
+     to {
+          transform: translateY(-50px);
+     }
+}
+
+@keyframes sky {
+     0% {
+          transform: translatex(-350px);
+     }
+     50% {
+          transform: translatex(300px)
+     }
+     100% {
+          transform: translatex(-350px);
+     }
+}
+
+/* knapper*/
+
+.knap1 {
+     height: 50px;
+     width: 100px;
+     text-align: center;
+     position: relative;
+     top: -20vw;
+     right: -50vw;
+     background: #3498db;
+     background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+     border-radius: 60px;
+     font-family: Arial;
+     color: #d7fcff;
+     font-size: 23px;
+     padding: 4px 20px 4px 20px;
+     text-decoration: none;
+}
+
+.knap1:hover {
+     cursor: pointer;
+     background: #3cb0fd;
+     background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+     background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+     background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+     background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+     background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+     text-decoration: none;
+}

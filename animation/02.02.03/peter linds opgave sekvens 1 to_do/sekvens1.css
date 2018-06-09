@@ -1,0 +1,104 @@
+body {
+     padding: 0;
+     margin: 0;
+}
+
+#scene {
+     position: relative;
+     width: 100vw;
+     height: 56.25vw;
+     background-color: #3d9883;
+}
+
+/* *** KANIN CONTAINER *** */
+
+#kanin_container {
+     position: absolute;
+
+}
+
+/* Flytte-animation: kanin kommer ind */
+
+.move_in {
+     animation-name: move_in_kf;
+     animation-duration: 5s;
+     animation-iteration-count: 1;
+     animation-timing-function: ease-in;
+     animation-fill-mode: forwards;
+}
+
+@keyframes move_in_kf {
+     from {
+          left: -15vw;
+     }
+
+     to {
+          left: 40vw;
+     }
+}
+
+/* Placering: kanin står inde */
+
+.position_in {
+     left: 40vw;
+}
+
+/* *** KANIN SPRITE *** */
+
+#kanin_sprite {
+     background-image: url("walknfall.svg");
+     background-size: 800% 400%;
+     width: 36vw;
+     height: 20vw;
+}
+
+/* Stillbillede: kanin står */
+
+.kanin {
+     background-position: 0 -100%;
+}
+
+/* Stillbillede: kanin ligger */
+
+.fallen {
+     background-position: -300% -100%;
+}
+
+/* Sprite-animation: kanin går */
+
+.walk {
+     animation-name: walk_kf;
+     animation-duration: 1s;
+     animation-timing-function: steps(8);
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+}
+
+@keyframes walk_kf {
+     0% {
+          background-position: 0 0%;
+     }
+     100% {
+          background-position: -800% 0%;
+     }
+}
+
+/* Sprite-animation: kanin falder */
+
+.fall {
+     animation-name: fall_kf;
+     animation-duration: .8s;
+     animation-timing-function: steps(3);
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+}
+
+@keyframes fall_kf {
+     from {
+          background-position: 0 -100%;
+     }
+
+     to {
+          background-position: -300% -100%;
+     }
+}

@@ -1,0 +1,269 @@
+.kredit {
+     background-image: url(grafik/scene/Krediteringsbillede.svg);
+     background-size: cover;
+     overflow: hidden;
+     width: 80vw;
+     height: 45vw;
+     margin: auto;
+     display: none;
+}
+
+.scene {
+     background-image: url(grafik/scene/Artboard%201-100.jpg);
+     background-size: cover;
+     width: 80vw;
+     height: 45vw;
+     margin: auto;
+     position: static;
+     background-repeat: no-repeat;
+
+}
+
+.raev {}
+
+#raev_container {
+     position: absolute;
+
+}
+
+#raev_sprite {
+     background-image: url(sprite/raev/raev_sprite_1-02.svg);
+     background-size: 795% 100%;
+     bottom: -34vw;
+     width: 33vw;
+     height: 50vw;
+     position: absolute;
+}
+
+.raev_walkcycle {
+     animation-name: raev_walkcycle;
+     animation-duration: 1s;
+     animation-timing-function: steps(8);
+     animation-iteration-count: infinite;
+     animation-direction: reverse;
+}
+
+#raev_container_ramt {
+     position: absolute;
+}
+
+#raev_sprite_ramt {
+     background-image: url(sprite/raev/raev_ramt_sprite_01.svg);
+     background-size: 800% 100%;
+     bottom: -53vw;
+     width: 33vw;
+     height: 50vw;
+     position: absolute;
+     display: none;
+}
+
+
+.raev_ramt {
+     animation-name: raev_ramt;
+     animation-duration: 1s;
+     animation-timing-function: steps(8);
+     animation-iteration-count: infinite;
+     animation-direction: reverse;
+}
+
+/*/
+.raev_walk {
+     animation-name: raev_walk;
+     animation-duration: 5s;
+     animation-fill-mode: forwards;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+}
+
+/**/
+
+.egern {}
+
+
+#egern_container {
+     position: absolute;
+     z-index: 2
+}
+
+#egern_sprite {
+     background-image: url(sprite/egern/egern_nuser_sprite-01.svg);
+     background-size: 800% 100%;
+     width: 23vw;
+     height: 46vw;
+     position: absolute;
+     bottom: -38vw;
+     left: 49vw;
+}
+
+.egern_walkcycle {
+     animation-name: egern_walkcycle;
+     animation-duration: 1s;
+     animation-timing-function: steps(8);
+     animation-iteration-count: infinite;
+     animation-direction: reverse;
+}
+
+#egern_kaste_container {}
+
+#egern_kaste_sprite {
+     background-image: url(sprite/egern/egern_kaste_sprite-02.svg);
+     background-size: 800% 100%;
+     width: 23vw;
+     height: 46vw;
+     position: relative;
+     bottom: -11vw;
+     left: 47vw;
+     display: none;
+}
+
+.egern_kastecycle {
+     animation-name: egern_kastecycle;
+     animation-duration: 1s;
+     animation-timing-function: steps(8);
+     animation-iteration-count: infinite;
+     animation-direction: reverse;
+}
+
+
+.busk {
+     background-image: url("grafik/scene/busk1.svg");
+     background-size: cover;
+     width: 35vw;
+     height: 10vw;
+     position: relative;
+     top: 17.1vw;
+     z-index: 4
+}
+
+.sky {
+     background-image: url(grafik/scene/sky1.svg);
+     background-size: cover;
+     width: 22.5vw;
+     height: 7vw;
+     top: -1vw;
+     position: absolute;
+     animation-name: sky;
+     animation-duration: 100s;
+     animation-fill-mode: forwards;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+
+}
+
+.agern {
+     background-image: url("grafik/scene/Asset%20agern.svg");
+     background-size: cover;
+     width: 2.5vw;
+     height: 3.2vw;
+     position: relative;
+     bottom: 1vw;
+     right: 31vw;
+     z-index: 5;
+}
+
+.agern_bunk {
+     background-image: url(grafik/scene/agaern-bunke.svg);
+     background-repeat: no-repeat;
+     position: relative;
+     width: 17vw;
+     height: 18vw;
+     bottom: -24px;
+     right: -32vw;
+     z-index: 0;
+}
+
+
+.graes {
+     background-image: url("grafik/scene/graes3.svg");
+     background-size: cover;
+     width: 55vw;
+     height: 9vw;
+     position: absolute;
+     top: 38vw;
+     right: 7vw;
+     z-index: 3;
+}
+
+
+/* KEYFRAMES*/
+
+/************* Får raev til at gå **/
+
+@keyframes raev_walkcycle {
+     0% {
+          background-position: 0% 0%;
+     }
+     100% {
+          background-position: 800% 0%;
+     }
+}
+
+@keyframes raev_ramt {
+     0% {
+          background-position: 0% 0%;
+     }
+     100% {
+          background-position: 800% 0%;
+     }
+}
+
+@keyframes egern_walkcycle {
+     0% {
+          background-position: 0% 0%;
+     }
+     100% {
+          background-position: 800% 0%;
+     }
+}
+
+@keyframes egern_kastecycle {
+     0% {
+          background-position: 0% 0%;
+     }
+     100% {
+          background-position: 800% 0%;
+     }
+}
+
+
+@keyframes sky {
+     0% {
+          transform: translatex(-350px);
+     }
+     50% {
+          transform: translatex(300px)
+     }
+     100% {
+          transform: translatex(-350px);
+     }
+}
+
+/* knapper*/
+
+.knap1 {
+     height: 50px;
+     width: 100px;
+     text-align: center;
+     position: absolute;
+     top: -20vw;
+     right: -50vw;
+     background: #3498db;
+     background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+     border-radius: 60px;
+     font-family: Arial;
+     color: #d7fcff;
+     font-size: 23px;
+     padding: 4px 20px 4px 20px;
+     text-decoration: none;
+}
+
+.knap1:hover {
+     cursor: pointer;
+     background: #3cb0fd;
+     background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+     background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+     background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+     background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+     background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+     text-decoration: none;
+}
