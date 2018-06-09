@@ -1,0 +1,58 @@
+/** Default indstillinger for figuren **/
+
+#deltager_container {}
+
+#deltager_sprite {
+     outline: 1px dashed black;
+     background-image: url(spritesheet.svg);
+     background-size: 500% 700%;
+     width: 25vw;
+     height: 30vw;
+}
+
+/***************** Viser figur B **/
+
+.deltager_B {
+     background-position: 0 -100%;
+}
+
+/***************** Viser figur D **/
+
+.deltager_D {
+     background-position: -100% -200%;
+}
+
+.deltager_synger {
+     animation-name: deltager_synger_kf;
+     animation-duration: 1s;
+     animation-timing-function: steps(2);
+     animation-iteration-count: infinite;
+}
+
+/************* Får figuren til at gå **/
+
+.deltager_walkcycle {
+     animation-name: deltager_walkcycle_kf;
+     animation-duration: 1s;
+     animation-timing-function: steps(5);
+     animation-iteration-count: infinite;
+     animation-direction: reverse;
+}
+
+@keyframes deltager_walkcycle_kf {
+     0% {
+          background-position: 0 -200%;
+     }
+     100% {
+          background-position: -500% -200%;
+     }
+}
+
+@keyframes deltager_synger_kf {
+     0% {
+          background-position: 500% 300%;
+     }
+     100% {
+          background-position: -200% -400%;
+     }
+}

@@ -1,0 +1,79 @@
+#man_sprite {
+
+    width: 30vw;
+    height: 42.86vw;
+    background-image: url(walk_cycle_grafik.svg);
+    background-size: 800% 100%;
+}
+
+.walking {
+    animation-name: walking_kf;
+    animation-duration: 1s;
+    animation-timing-function: steps(8);
+    animation-iteration-count: infinite;
+}
+
+@keyframes walking_kf {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -800% 0%;
+    }
+}
+
+
+#man_container {
+    position: absolute;
+
+}
+
+.moving_center {
+    animation-name: moving_kf;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+
+@keyframes moving_kf {
+
+    0% {
+
+        left: -30vw;
+    }
+    100% {
+
+        left: 35vw;
+    }
+}
+
+.moving_out {
+    animation-name: moving_out_kf;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes moving_out_kf {
+
+    0% {
+
+        left: 35vw;
+    }
+    100% {
+
+        left: 105vw;
+    }
+}
+
+.standing_center_stage {
+    left: 35vw;
+}
+
+
+

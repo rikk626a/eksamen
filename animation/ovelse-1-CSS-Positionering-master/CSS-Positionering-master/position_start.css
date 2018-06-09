@@ -1,0 +1,73 @@
+/*
+div {
+    outline: 2px dotted yellow;
+}
+*/
+
+.rum {
+     background-image: url("grafik/room.jpg");
+     background-size: cover;
+     width: 80vw;
+     height: 45vw;
+     margin: auto;
+     overflow: hidden;
+
+}
+
+.bord {
+     background-image: url("grafik/bord.png");
+     background-repeat: no-repeat;
+     background-size: 100%;
+     width: 28vw;
+     height: 23vw;
+     position: relative;
+     left: 32vw;
+     top: 26vw;
+     z-index: 4;
+}
+
+.stol {
+     background-image: url("grafik/chair.png");
+     background-repeat: no-repeat;
+     background-size: 100%;
+     width: 16vw;
+     height: 24.6vw;
+     position: relative;
+     left: 48vw;
+     bottom: 3vw;
+     z-index: 2;
+}
+
+.skaal {
+     background-image: url("grafik/skaal.png");
+     background-size: 100%;
+     width: 8vw;
+     height: 3.1vw;
+     position: relative;
+     bottom: 23vw;
+     left: 46vw;
+     z-index: 5;
+}
+
+.kvinde {
+     background-image: url("grafik/kvinde.png");
+     background-repeat: no-repeat;
+     background-size: 100%;
+     width: 16vw;
+     height: 37.8vw;
+     position: relative;
+     bottom: 43vw;
+     left: 21vw;
+     z-index: 5;
+}
+
+.mand {
+     background-image: url("grafik/mand.png");
+     background-repeat: no-repeat;
+     background-size: 100%;
+     width: 16vw;
+     height: 38.6vw;
+     position: relative;
+     bottom: 83vw;
+     left: 28vw;
+}

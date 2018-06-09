@@ -1,0 +1,314 @@
+    body {
+         padding-top: 25px;
+         padding: 0px;
+         margin: 0px;
+         width: 100%;
+         font-family: 'Karla',
+         sans-serif;
+    }
+
+    .content_header ul {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+    }
+
+    .content_header li:hover {
+         background-color: #252525;
+    }
+
+    .content_header {
+         align-self: center;
+         width: 75%;
+         min-height: 8%;
+         position: fixed;
+    }
+
+
+    p {
+         width: 50%;
+         margin: auto;
+         text-align: left;
+         padding-bottom: 25px;
+         line-height: 1.4;
+    }
+
+    /* --------------------
+
+*/
+
+    .content_nav,
+    .drop-nav {
+         background: #212121;
+    }
+
+    .content_nav {
+         float: right;
+         border: solid 1px #212121;
+         border-bottom: 1px solid rgba(255, 255, 255, .1);
+         z-index: 1;
+    }
+
+    .content_nav > li {
+         float: left;
+         border-left: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .content_nav li:first-child {
+         border-left: none;
+    }
+
+    .content_nav a {
+         color: #fff;
+         display: block;
+         padding: 10px 30px;
+         text-decoration: none;
+    }
+
+    .dropdown,
+    .flyout {
+         position: relative;
+    }
+
+    .dropdown:after {
+         font-size: .5em;
+         display: block;
+         position: absolute;
+         top: 38%;
+         right: 12%;
+    }
+
+    .drop-nav,
+    .flyout-nav {
+         position: absolute;
+         display: none;
+    }
+
+    .drop-nav li {
+         border-bottom: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .dropdown:hover > .drop-nav,
+    .flyout:hover > .flyout-nav {
+         display: block;
+         background: #212121;
+    }
+
+    .flyout-nav {
+         left: 100%;
+         top: 0;
+    }
+
+    .flyout:hover a {
+         background-color: #252525;
+    }
+
+    /* -HEADE STOPPER HER */
+
+    .box-container {
+         padding-top: 30px;
+         margin: 0vw;
+         padding: 0vw;
+         display: flex;
+         flex-direction: row;
+         width: 100%;
+         height: auto;
+
+    }
+
+    .ex-map {
+         padding-top: 30px;
+         margin: 0vw;
+         display: flex;
+         flex-direction: row;
+         width: 100%;
+         height: auto;
+
+    }
+
+    .content {
+         padding-top: 30px;
+         margin: auto;
+         max-width: 100%;
+         text-align: center;
+         flex-wrap: nowrap;
+    }
+
+    .aof-box {
+         padding-top: 50px;
+         display: flex;
+    }
+
+    .content_1 {
+         margin: auto;
+         width: 30%;
+         height: auto;
+         text-align: center;
+         background-color: pink;
+         align-self: flex-end;
+
+
+    }
+
+    .content_2 {
+         margin: auto;
+         width: 30%;
+         height: auto;
+         text-align: center;
+         background-color: pink;
+         align-self: flex-end;
+
+    }
+
+    .content_2 img {
+         width: 610px;
+
+    }
+
+    .content_3 {
+         margin: auto;
+         width: 30%;
+         height: auto;
+         text-align: center;
+         background-color: pink;
+         align-self: flex-end;
+    }
+
+    .bmc img {
+         width: 60%;
+         height: auto;
+    }
+
+    .charette img {
+         padding-top: 30px;
+         width: 30%;
+         height: auto;
+    }
+
+    #ex_map img {
+         width: 80%;
+         height: auto;
+    }
+
+    #br_story img {
+         padding-top: 30px;
+         width: 80%;
+         height: auto;
+    }
+
+    #mining img {
+         padding-top: 30px;
+         width: 80%;
+         height: auto;
+
+    }
+
+    .papir-pro img {
+         width: 45%;
+         height: auto;
+    }
+
+
+    .nabc {
+         padding-top: 50px;
+         margin: auto;
+         display: flex;
+    }
+
+    .cont_N {
+         text-align: center;
+         width: 500px;
+         height: auto;
+         flex-grow: 1;
+    }
+
+    .cont_A {
+         text-align: center;
+         width: 500px;
+         height: auto;
+         flex-grow: 1;
+    }
+
+    .cont_B {
+         list-style: inside;
+         text-align: center;
+         width: 500px;
+         height: auto;
+         flex-grow: 1;
+    }
+
+
+    .cont_C {
+         text-align: center;
+         width: 500px;
+         height: auto;
+         flex-grow: 1;
+    }
+
+    .cont_C a:link,
+    a:visited {
+         background-color: #252525;
+         color: white;
+         padding: 14px 25px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+    }
+
+
+    .rows {
+         padding-top: 30px;
+         width: 100%;
+         margin: 0;
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: row;
+
+    }
+
+    .child_1 {
+         text-align: center;
+
+
+    }
+
+    .child_2 {
+         text-align: center;
+         margin: auto;
+         padding: 0;
+
+    }
+
+    .child_3 {
+         margin: auto;
+         padding: 0;
+
+
+    }
+
+    .forside_parent {
+         padding-top: 50px;
+         margin: auto;
+         display: flex;
+    }
+
+    .scrum_img img {
+         margin: 5px;
+         width: 30%;
+         height: 30%;
+    }
+
+    box_3 {
+         margin: auto;
+         margin-right: 20px;
+         height: 300px;
+         text-align: center;
+         background-color: pink;
+
+    }
+
+    .cont_A img {
+         margin: 5px;
+         width: 95%;
+         height: auto;
+    }

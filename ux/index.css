@@ -1,0 +1,125 @@
+    body {
+         padding: 0px;
+         margin: 0px;
+         width: 100%;
+         font-family: 'Karla', sans-serif;
+    }
+
+    p {
+         width: 50%;
+         margin: auto;
+         text-align: left;
+    }
+
+
+    .nav-wrap {
+         width: 100%;
+         padding-bottom: 2vw;
+    }
+
+    .topnav {
+         display: flex;
+         flex-wrap: nowrap;
+         width: 100%;
+         position: fixed;
+         background-color: dimgrey;
+         text-align: center;
+         border-left: 1px;
+         border-color: #FFFFFF;
+    }
+
+    .topnav a {
+         width: 100%;
+         overflow: hidden;
+         float: left;
+         display: block;
+         color: #f2f2f2;
+         text-align: center;
+         padding: 3px 6px;
+         text-decoration: none;
+         font-size: 1em;
+
+
+    }
+
+    .topnav a:hover {
+         background-color: #e9bdd8;
+         color: dimgray;
+         border-left: 1px;
+         border-color: #FFFFFF;
+    }
+
+    .box-container {
+         margin: 0vw;
+         padding: 0vw;
+         display: flex;
+         flex-direction: row;
+         width: 100%;
+         height: auto;
+
+    }
+
+    .content {
+         margin: 1vw;
+         padding: 1vw;
+         max-width: 100%;
+         text-align: center;
+         flex-wrap: nowrap;
+    }
+
+    .logo_forside {
+         margin: 0px;
+         padding-top: 5%;
+         max-width: 100%;
+         text-align: center;
+    }
+
+
+    #m_gruppe {
+
+         display: flex;
+         flex-direction: row;
+
+    }
+
+    #m_gruppe .content {
+         padding-top: 2vw;
+         margin: 0;
+         width: 25%;
+
+    }
+
+    .bmc img {
+         width: 60%;
+         height: auto;
+    }
+
+    .charette img {
+         width: 30%;
+         height: auto;
+    }
+
+    #ex_map img {
+         width: 80%;
+         height: auto;
+    }
+
+    #br_story img {
+         width: 80%;
+         height: auto;
+    }
+
+    #mining img {
+         width: 80%;
+         height: auto;
+    }
+
+    #aof .content {
+         text-align: center;
+
+    }
+
+    .datali {
+         margin: auto;
+         padding-bottom: 25px;
+    }

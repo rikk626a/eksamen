@@ -1,0 +1,27 @@
+#raev_container {}
+
+#raev_sprite {
+     background-image: url(raev_sprite_1-02.svg);
+     background-size: 795% 100%;
+     width: 41vw;
+     height: 46vw;
+}
+
+/************* Får figuren til at gå **/
+
+.raev_walkcycle {
+     animation-name: raev_walkcycle;
+     animation-duration: 1s;
+     animation-timing-function: steps(8);
+     animation-iteration-count: infinite;
+     animation-direction: reverse;
+}
+
+@keyframes raev_walkcycle {
+     0% {
+          background-position: 0% 0%;
+     }
+     100% {
+          background-position: 800% 0%;
+     }
+}
