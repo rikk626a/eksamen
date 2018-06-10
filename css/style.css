@@ -16,18 +16,6 @@
      clear: both;
 }
 
-.has-top-margin {
-     /* this class is given - using jQuery - to the .cd-main-content following the .cd-secondary-nav when it becomes fixed */
-}
-
-@media only screen and (min-width: 1170px) {
-     .has-top-margin {
-          -webkit-animation: animate-margin-top 0.3s;
-          -moz-animation: animate-margin-top 0.3s;
-          animation: animate-margin-top 0.3s;
-          margin-top: 70px;
-     }
-}
 
 @-webkit-keyframes animate-margin-top {
      0% {
@@ -59,15 +47,10 @@
      }
 }
 
-/* --------------------------------
-
-Navigation
-
--------------------------------- */
 
 .cd-header {
-     position: absolute;
-     top: 0;
+     position: sticky;
+     top: 0px;
      left: 0;
      width: 100%;
      height: 50px;
@@ -78,7 +61,7 @@ Navigation
 
 @media only screen and (min-width: 768px) {
      .cd-header {
-          height: 70px;
+          height: 0px;
           background-color: transparent;
           box-shadow: none;
           opacity: 0;
@@ -87,7 +70,6 @@ Navigation
 
 
 .cd-primary-nav {
-     /* mobile first - navigation hidden by default, triggered by tap/click on navigation icon */
      float: right;
      margin-right: 5%;
      width: 44px;
@@ -127,9 +109,8 @@ Navigation
      color: #f0eee1;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 2000px) {
      .cd-primary-nav {
-          /* reset navigation values */
           width: auto;
           height: auto;
           background: none;
@@ -166,11 +147,6 @@ Navigation
      }
 }
 
-/* --------------------------------
-
-Intro
-
--------------------------------- */
 
 #cd-intro {
      position: relative;
@@ -222,51 +198,13 @@ Intro
      }
 }
 
-.cd-btn {
-     display: inline-block;
-     padding: 1em 1.8em;
-     background-color: rgba(245, 72, 74, 0.9);
-     margin-top: 1em;
-     border-radius: 20em;
-     -webkit-backface-visibility: hidden;
-     backface-visibility: hidden;
-     -webkit-font-smoothing: antialiased;
-     -moz-osx-font-smoothing: grayscale;
-     color: white;
-}
-
 .no-touch .cd-btn:hover {
      background-color: #f5484a;
 }
 
-@media only screen and (min-width: 1170px) {
-     .cd-btn.is-hidden {
-          /* assign a position fixed and move outside the viewport (on the right) */
-          opacity: 0;
-          position: fixed;
-          right: -20%;
-          top: 0;
-          padding: .8em 1.2em;
-          margin: 14px 0 0;
-          -webkit-transition: right 0.3s, opacity 0.3s;
-          -moz-transition: right 0.3s, opacity 0.3s;
-          transition: right 0.3s, opacity 0.3s;
-     }
-     .cd-btn.is-hidden.slide-in {
-          /* slide in when the secondary nav gets fixed */
-          right: 5%;
-          opacity: 1;
-     }
-}
-
-/* --------------------------------
-
-Secondary Fixed Navigation
-
--------------------------------- */
 
 .cd-secondary-nav {
-     position: relative;
+     position: fi;
      z-index: 3;
 }
 
@@ -320,7 +258,7 @@ Secondary Fixed Navigation
      border-bottom: none;
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 768px) {
      .cd-secondary-nav {
           z-index: 1;
           height: 100px;
@@ -424,105 +362,6 @@ Secondary Fixed Navigation
      }
 }
 
-.cd-secondary-nav-trigger {
-     position: fixed;
-     bottom: 20px;
-     right: 5%;
-     width: 44px;
-     height: 44px;
-     background: rgba(3, 13, 24, 0.96);
-     border-radius: 0.25em;
-     overflow: hidden;
-     text-indent: 100%;
-     white-space: nowrap;
-     z-index: 2;
-}
-
-.cd-secondary-nav-trigger span {
-     position: absolute;
-     display: block;
-     width: 4px;
-     height: 4px;
-     border-radius: 50%;
-     background: #f0eee1;
-     left: 50%;
-     top: 50%;
-     bottom: auto;
-     right: auto;
-     -webkit-transform: translateX(-50%) translateY(-50%);
-     -moz-transform: translateX(-50%) translateY(-50%);
-     -ms-transform: translateX(-50%) translateY(-50%);
-     -o-transform: translateX(-50%) translateY(-50%);
-     transform: translateX(-50%) translateY(-50%);
-     -webkit-transition: background 0.3s;
-     -moz-transition: background 0.3s;
-     transition: background 0.3s;
-}
-
-.cd-secondary-nav-trigger span::before,
-.cd-secondary-nav-trigger span::after {
-     content: '';
-     position: absolute;
-     background: inherit;
-     width: 100%;
-     height: 100%;
-     border-radius: 50%;
-}
-
-.cd-secondary-nav-trigger span::before {
-     right: -10px;
-     -webkit-transform: rotate(0);
-     -moz-transform: rotate(0);
-     -ms-transform: rotate(0);
-     -o-transform: rotate(0);
-     transform: rotate(0);
-}
-
-.cd-secondary-nav-trigger span::after {
-     left: -10px;
-     -webkit-transform: rotate(0);
-     -moz-transform: rotate(0);
-     -ms-transform: rotate(0);
-     -o-transform: rotate(0);
-     transform: rotate(0);
-}
-
-.cd-secondary-nav-trigger.menu-is-open {
-     background: transparent;
-}
-
-.cd-secondary-nav-trigger.menu-is-open span {
-     background: rgba(240, 238, 225, 0);
-     width: 20px;
-     height: 2px;
-}
-
-.cd-secondary-nav-trigger.menu-is-open span::before,
-.cd-secondary-nav-trigger.menu-is-open span::after {
-     background: #f0eee1;
-     width: 100%;
-     height: 100%;
-     border-radius: 0;
-     top: 0;
-     left: 0;
-}
-
-.cd-secondary-nav-trigger.menu-is-open span::before {
-     -webkit-transform: rotate(135deg);
-     -moz-transform: rotate(135deg);
-     -ms-transform: rotate(135deg);
-     -o-transform: rotate(135deg);
-     transform: rotate(135deg);
-}
-
-.cd-secondary-nav-trigger.menu-is-open span::after {
-     -webkit-transform: rotate(225deg);
-     -moz-transform: rotate(225deg);
-     -ms-transform: rotate(225deg);
-     -o-transform: rotate(225deg);
-     transform: rotate(225deg);
-}
-
 
 @media only screen and (max-width: 767px) {
      .cd-secondary-nav-trigger {
@@ -610,8 +449,39 @@ FOOTER Section
      display: inline-flex;
 }
 
+#cd-back {
+     float: left;
+     margin: 2% 2% 2% 2%;
+     display: block;
+     cursor: pointer;
+}
 
+#cd-back:hover {
+     color: indianred;
+}
 
+#cd-back-2 {
+     float: left;
+     margin: 2% 2% 2% 2%;
+     display: block;
+     cursor: move;
+}
+
+#cd-back-2:hover {
+     color: indianred;
+}
+
+@media only screen and (min-width: 1200px) {
+     #cd-back {
+          display: none;
+     }
+}
+
+@media only screen and (max-width: 768px) {
+     #cd-back-2 {
+          display: none;
+     }
+}
 
 .iframe {
      margin: auto;
