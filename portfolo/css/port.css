@@ -70,14 +70,14 @@
      background: linear-gradient( rgba(0, 0, 0, 0.50),
      rgba(0, 0, 0, 0.10)),
      /* bottom, image */
-     url(../images/flower.jpg);
+     url(../images/animation.png)
 }
 
 .port-img-4 {
      background: linear-gradient( rgba(0, 0, 0, 0.50),
      rgba(0, 0, 0, 0.10)),
      /* bottom, image */
-     url(../images/feather.jpg);
+     url(../images/ux.png);
 }
 
 .port-info {
@@ -102,16 +102,14 @@ VIDEO-HOLDER Section
 
 -------------------------------- */
 
-.section-video {
-     background-color: #2B343A;
-     margin: auto;
-     max-width: 1200px;
-     height: 1000px;
-}
+.section-video {}
 
 .container {
      margin: auto;
-     max-width: 1200px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     background-color: #2B343A;
 }
 
 p,
@@ -125,27 +123,12 @@ h1 {
 }
 
 .cell {
-     margin: auto;
+     width: 400px;
+     margin: 10px;
      display: block;
-     margin-right: 5px;
+
 }
 
-@media screen and (min-width: 768px) {
-     .grid {
-          display: flex;
-          flex-wrap: wrap;
-          flex-direction: row;
-     }
-     .cell {
-          width: 50%;
-     }
-}
-
-@media screen and (min-width: 1170px) {
-     .cell {
-          width: calc(100% / 5);
-     }
-}
 
 .animation-section {
      max-width: 1200px;
@@ -176,7 +159,6 @@ h1 {
      padding: 0;
      list-style: none;
      display: block;
-     text-align: center;
      width: 30%;
 }
 
@@ -205,6 +187,17 @@ h1 {
 }
 
 
-#h2-center {
+.h2-center {
      text-align: center;
+     margin: auto;
+
+}
+
+.p-align {
+     margin: auto;
+     width: 50%;
+     top: 50px;
+     text-align: center;
+     text-indent: 100px;
+
 }
