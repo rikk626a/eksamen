@@ -7,7 +7,6 @@
      <link rel="stylesheet" href="css/stylesheet.css">
      <link rel="stylesheet" href="css/reset.css">
      <link rel="stylesheet" href="portfolo/css/port.css">
-     <!-- CSS reset -->
      <link rel="stylesheet" href="css/style.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="css/transition.css">
@@ -23,6 +22,8 @@
 
 <body>
      <header class="cd-header">
+          <div id="cd-back">
+               <span href="intro.html"><i class="fa fa-chevron-left" onclick="history.back(-1)" style="font-size:25px;color:#FFF"></i></span></div>
           <nav class="cd-primary-nav">
                <ul>
                     <li><a href="index.html">Home</a></li>
@@ -31,7 +32,6 @@
                     <li><a href="#0">Example</a></li>
                </ul>
           </nav>
-          <!-- cd-primary-nav -->
      </header>
 
 
@@ -41,31 +41,32 @@
           </div>
      </section>
      <div class="cd-secondary-nav">
-          <a href="#0" class="cd-secondary-nav-trigger">Menu<span></span></a>
+          <div id="cd-back-2">
+               <span href="intro.html"><i class="fa fa-chevron-left" onclick="history.back(-1)" style="font-size:25px;color:#FFF"></i></span>
+          </div>
           <nav>
                <ul>
                     <li>
                          <a href="#cd-placeholder-1">
 						<b>UX Intro</b>
-						<span></span><!-- icon -->
+						<span></span>
 					</a>
                     </li>
                     <li>
                          <a href="#cd-placeholder-2">
 						<b>Joe &amp; The Juice</b>
-						<span></span><!-- icon -->
+						<span></span>
 					</a>
                     </li>
                     <li>
                          <a href="index.html">
 						<b>Home</b>
-						<span></span><!-- icon -->
+						<span></span>
 					</a>
                     </li>
                </ul>
           </nav>
      </div>
-     <!-- .cd-secondary-nav -->
      <main class="cd-main-content">
           <section id="cd-placeholder-1" class="cd-section cd-container">
                <h2>UX</h2>

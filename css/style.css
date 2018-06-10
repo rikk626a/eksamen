@@ -218,45 +218,8 @@
      background: rgba(3, 13, 24, 0.96);
      visibility: hidden;
      z-index: 1;
-     -webkit-backface-visibility: hidden;
-     backface-visibility: hidden;
-     -webkit-transform: scale(0);
-     -moz-transform: scale(0);
-     -ms-transform: scale(0);
-     -o-transform: scale(0);
-     transform: scale(0);
-     -webkit-transform-origin: 100% 100%;
-     -moz-transform-origin: 100% 100%;
-     -ms-transform-origin: 100% 100%;
-     -o-transform-origin: 100% 100%;
-     transform-origin: 100% 100%;
-     -webkit-transition: -webkit-transform 0.3s, visibility 0s 0.3s;
-     -moz-transition: -moz-transform 0.3s, visibility 0s 0.3s;
-     transition: transform 0.3s, visibility 0s 0.3s;
 }
 
-.cd-secondary-nav ul.is-visible {
-     visibility: visible;
-     -webkit-transform: scale(1);
-     -moz-transform: scale(1);
-     -ms-transform: scale(1);
-     -o-transform: scale(1);
-     transform: scale(1);
-     -webkit-transition: -webkit-transform 0.3s, visibility 0s 0s;
-     -moz-transition: -moz-transform 0.3s, visibility 0s 0s;
-     transition: transform 0.3s, visibility 0s 0s;
-}
-
-.cd-secondary-nav li a {
-     display: block;
-     padding: 1.6em;
-     border-bottom: 1px solid #092645;
-     color: #f0eee1;
-}
-
-.cd-secondary-nav li:last-child a {
-     border-bottom: none;
-}
 
 @media only screen and (min-width: 768px) {
      .cd-secondary-nav {
@@ -269,8 +232,6 @@
 
      }
      .cd-secondary-nav nav,
-     .cd-secondary-nav ul,
-     .cd-secondary-nav li,
      .cd-secondary-nav a {
           height: 100%;
      }
@@ -485,4 +446,68 @@ FOOTER Section
 
 .iframe {
      margin: auto;
+}
+
+#fact1-c {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+}
+
+#fact1 {
+     cursor: pointer;
+     margin: 10px;
+     width: 90%;
+     height: 15vw;
+     background-color: skyblue;
+     font-family: sans-serif;
+     text-align: center;
+}
+
+#fact2-c {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+}
+
+#fact2 {
+     cursor: pointer;
+     margin: 10px;
+     text-align: center;
+     width: 90%;
+     height: 15vw;
+     background-color: cadetblue;
+     font-family: sans-serif;
+     text-align: center;
+}
+
+#fact3-c {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+}
+
+#fact3 {
+     cursor: pointer;
+     margin: 10px;
+     text-align: center;
+     width: 90%;
+     height: 15vw;
+     background-color: steelblue;
+     font-family: sans-serif;
+     text-align: center;
+}
+
+
+
+#post-text1 {
+     display: none;
+}
+
+#post-text2 {
+     display: none;
+}
+
+#post-text3 {
+     display: none;
 }

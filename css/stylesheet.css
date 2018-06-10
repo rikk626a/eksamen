@@ -23,18 +23,9 @@ img {
 }
 
 
-.container {
-     display: flex;
-     flex-wrap: wrap;
-     height: 850px;
-     width: 100%;
-}
-
-.textfield {
-     align-self: flex-end;
-     width: 100%;
-     height: 150PX;
-     background-color: white;
+#prof-pic {
+     max-width: 50%;
+     margin: 0% 0% 0% 25%;
 }
 
 .cd-container {
@@ -51,6 +42,3 @@ img {
      display: table;
      clear: both;
 }
-
-/*****************************************************
-MENU

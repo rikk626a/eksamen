@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
 
 .port-section {
+     display: flex;
      max-width: 960px;
-     height: 650px;
+     height: 100%;
      margin: 0 auto;
      padding: 6% 2%;
 }

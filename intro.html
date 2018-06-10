@@ -23,9 +23,9 @@
 <body>
      <header class="cd-header">
           <div id="cd-back">
-               <span href="intro.html"><i class="fa fa-chevron-left" style="font-size:25px;color:#FFF"></i></span></div>
-          <nav class="cd-primary-nav">
+               <span href="intro.html"><i class="fa fa-chevron-left" onclick="history.back(-1)" style="font-size:25px;color:#FFF"></i></span></div>
 
+          <nav class="cd-primary-nav">
                <ul>
                     <li><a href="#cd-intro">Intro</a></li>
                     <li><a href="#cd-placeholder-1">Om</a></li>
@@ -42,12 +42,9 @@
           </div>
 
      </section>
-
-
      <div class="cd-secondary-nav">
           <div id="cd-back-2">
-               <span href="intro.html"><i class="fa fa-chevron-left" style="font-size:25px;color:#FFF"></i></span>
-          </div>
+               <span href="intro.html"><i class="fa fa-chevron-left" onclick="history.back(-1)" style="font-size:25px;color:#FFF"></i></span></div>
           <nav>
                <ul>
                     <li>
@@ -75,15 +72,51 @@
      <main class="cd-main-content">
           <section id="cd-placeholder-1" class="cd-section cd-container">
                <h2>Om</h2>
-               <p>Jeg er studerende på KEA - Multimediedesign linjen, og her er mit første semesters portfolio.
+               <p>Jeg hedder Rikke Krogh og jeg er studerende på KEA - Multimediedesign linjen, og her er mit første semesters portfolio.
                </p>
-               <img src="img/prof_pic_1jpg.jpg" alt="billed">
+               <img id="prof-pic" src="img/prof-pic.jpg" alt="billed">
+               <h2>Her er nogle facts om mig!</h2>
+
+               <div id="fact1-c">
+                    <div id="fact1">
+                         <div class="pre-text1">
+                              <p>Tryk for fact!</p>
+
+                         </div>
+                         <div id="post-text1">
+                              <p>Jeg elsker farven blå!</p>
+                         </div>
+                    </div>
+               </div>
+
+               <div id="fact2-c">
+                    <div id="fact2">
+                         <div class="pre-text2">
+                              <p>Tryk for fact!</p>
+
+                         </div>
+                         <div id="post-text2">
+                              <p>Jeg er 26 år gammel!</p>
+                         </div>
+                    </div>
+               </div>
+
+               <div id="fact3-c">
+                    <div id="fact3">
+                         <div class="pre-text3">
+                              <p>Tryk for fact!</p>
+
+                         </div>
+                         <div id="post-text3">
+                              <p>Jeg er dygtig til poker!</p>
+                         </div>
+                    </div>
+               </div>
+
           </section>
 
           <section id="cd-placeholder-2" class="cd-section cd-container">
                <h2>Portfolio</h2>
-
-
                <div class="port-section">
                     <ul class="port-grid">
                          <li>
@@ -91,7 +124,6 @@
                                    <a href="webdesign.html">
                                         <div class="port-info">
                                              <h3>Webdesign</h3>
-
                                         </div>
                                    </a>
                               </div>
@@ -127,18 +159,10 @@
                               </div>
                     </ul>
                </div>
-
-
-
-
-
-
-
           </section>
      </main>
 
      <footer class="parent_foot">
-
           <div class="content_foot">
 
                <a href="mailto:
