@@ -246,7 +246,7 @@
      }
      .cd-secondary-nav li {
           display: inline-block;
-          margin-left: -4px;
+          margin-left: 4px;
      }
      .cd-secondary-nav li a {
           position: relative;
