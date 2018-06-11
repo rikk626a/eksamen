@@ -76,7 +76,7 @@
      height: 100%;
      background: url("../img/cd-icon-menu.svg") no-repeat center center;
      background-size: 44px 44px;
-     cursor: context-menu;
+     cursor: pointer;
 }
 
 .cd-primary-nav ul {
@@ -198,13 +198,8 @@
      }
 }
 
-.no-touch .cd-btn:hover {
-     background-color: #f5484a;
-}
-
-
 .cd-secondary-nav {
-     position: fi;
+     position: relative;
      z-index: 3;
 }
 
@@ -336,15 +331,9 @@
      }
 }
 
-/* --------------------------------
-
-Placeholder Sections
-
--------------------------------- */
-
 .cd-section {
      margin: 0 auto;
-     padding: 2em 0;
+     padding: 1em 0;
 }
 
 .cd-section h2 {
@@ -425,7 +414,7 @@ FOOTER Section
      float: left;
      margin: 2% 2% 2% 2%;
      display: block;
-     cursor: move;
+     cursor: pointer;
 }
 
 #cd-back-2:hover {
